@@ -1,0 +1,20 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Comunicados</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      <p>{{detail.descricao}}</p>
+    </ion-card-header>
+    <ion-card-content>
+      <p [innerHTML] = "detail.feed"></p>
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>

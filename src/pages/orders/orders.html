@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Portaria</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="list-avatar-page">
+  <ion-list>
+
+    <ion-list-header>Encomendas</ion-list-header>
+
+    <ion-item *ngFor="let item of listOrders">
+      <h4>{{item.descricao}}</h4>
+      <p>Recebido por: {{item.nome}}</p>
+        <ion-note item-right>{{item.data}} {{item.hora}}</ion-note>
+    </ion-item>
+  </ion-list>
+
+
+
+</ion-content>

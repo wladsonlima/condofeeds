@@ -1,0 +1,107 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title class="ion-title">Morada do Sol Fazendinha</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="list-avatar-page icons-basic-page grid-basic-page">
+
+
+  <ion-list>
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="{{userData.avatar}}">
+      </ion-avatar>
+      <h2>{{userData.nome}}</h2>
+      <p>Bloco: {{userData.bloco}} Apto: {{userData.num_apto}} </p>
+    </ion-item>
+  </ion-list>
+  <ion-row>
+    <ion-col (click)="order()">
+      <div>
+        <ion-icon name="cube"> </ion-icon><br> Portaria &<br> Encomendas
+
+      </div>
+    </ion-col>
+    <ion-col (click)="ListFeeds()">
+      <div>
+        <ion-icon name="paper"> </ion-icon><br>
+        <br> Comunicados
+        <br>
+
+      </div>
+    </ion-col>
+    <ion-col>
+      <div>
+        <ion-icon name="exit" (click)="exit()"></ion-icon><br>
+        <br> Logout
+        <br>
+
+      </div>
+    </ion-col>
+
+    <!--<ion-col>
+      <div>
+        <ion-icon name="document"> </ion-icon><br>
+        <br> Documentos
+        <br>
+
+      </div>
+    </ion-col>-->
+
+  </ion-row>
+  <!--<ion-row>
+    <ion-col>
+      <div>
+        <ion-icon name="book"> </ion-icon><br> Livro de <br> Ocorrencias
+
+      </div>
+    </ion-col>
+
+    <ion-col>
+      <div>
+        <ion-icon name="calendar"> </ion-icon><br> Agenda & <br> Reservas
+      </div>
+    </ion-col>
+    <ion-col>
+      <div>
+        <ion-icon name="exit" (click)="exit()"></ion-icon><br>
+        <br> Logout
+        <br>
+
+      </div>
+    </ion-col>
+
+  </ion-row>-->
+
+
+
+
+
+
+
+
+</ion-content>
+
+<!--  <ion-list>
+    <ion-list-header>Comunicados</ion-list-header>
+    <ion-item *ngFor="let item of listFeeds; let i = index">
+      <h2>{{item.descricao}}</h2>
+      <p>{{item.feed}}</p>
+        <ion-icon name="arrow-round-forward" item-right></ion-icon>
+      <p><ion-note item-right> {{item.dateDiff}}  </ion-note></p>
+    </ion-item>
+  </ion-list>-->
+
+<!--
+<ion-list>
+    <ion-list-header>Comunicados</ion-list-header>
+  <ion-item *ngFor="let item of listFeeds">
+   
+    <h2>Finn</h2>
+    <h3>Don't Know What To Do!</h3>
+    <p>I've had a pretty messed up day. If we just...</p>
+  </ion-item>
+</ion-list>
+
+-->
